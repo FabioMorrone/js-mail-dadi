@@ -15,3 +15,23 @@ const theMail = prompt("Inserire mail dell'invitato")
 
 
 /* controllare se la mail è nella lista */
+
+let trovato = false
+
+for (let index = 0; index < invitedEmails.length; index++) {
+    const mail = invitedEmails[index];
+    if (mail == theMail){
+        
+        trovato = true
+    }
+
+}
+console.log(trovato);
+
+if (trovato == true){
+console.log("Sei invitato");
+
+}else {
+    console.log("Non sei invitato");
+    
+}
